@@ -14,6 +14,15 @@ function App() {
       >
         + 1
       </button>
+      <span> </span>
+      <button
+        onClick={() => {
+          console.log("클릭 감지됨");
+          setCount(count - 1);
+        }}
+      >
+        - 1
+      </button>
     </div>
   );
 }
