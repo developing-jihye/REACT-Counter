@@ -18,6 +18,15 @@ function App() {
       <button
         onClick={() => {
           console.log("클릭 감지됨");
+          setCount(0);
+        }}
+      >
+        초기화
+      </button>
+      <span> </span>
+      <button
+        onClick={() => {
+          console.log("클릭 감지됨");
           setCount(count - 1);
         }}
       >
