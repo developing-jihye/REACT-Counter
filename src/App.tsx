@@ -1,10 +1,19 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>0</h1>
-      <button onClick={() => console.log("클릭 감지됨")}>1 증가</button>
+      <h1>{count}</h1>
+      <button
+        onClick={() => {
+          console.log("클릭 감지됨");
+          setCount(count + 1);
+        }}
+      >
+        + 1
+      </button>
     </div>
   );
 }
