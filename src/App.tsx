@@ -9,10 +9,10 @@ function App() {
       <button
         onClick={() => {
           console.log("클릭 감지됨");
-          setCount(count + 1);
+          setCount(count - 1);
         }}
       >
-        + 1
+        - 1
       </button>
       <span> </span>
       <button
@@ -27,11 +27,11 @@ function App() {
       <button
         onClick={() => {
           console.log("클릭 감지됨");
-          setCount(count - 1);
+          setCount(count + 1);
         }}
       >
-        - 1
-      </button>
+        + 1
+      </button>      
     </div>
   );
 }
