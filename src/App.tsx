@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "./App.css";
+import { useState } from "react";
 
-function App() {
+function Counter() {
   const [count, setCount] = useState(0);
 
   // 0일 때 초기화 버튼 안 보이게
@@ -43,6 +43,19 @@ function App() {
       </button>
     </div>
   );
+}
+
+function App() {
+  return(
+    <div>
+      <h2>Hello, REACT!</h2>
+      <p>UseState: Counter</p>
+      <Counter />
+      <Counter />
+      <Counter />
+    </div>
+  );
+  
 }
 
 export default App;
