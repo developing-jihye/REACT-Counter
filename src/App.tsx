@@ -46,16 +46,38 @@ function Counter() {
 }
 
 function App() {
-  return(
+  // const counterArray = [];
+  // for(let i = 0; i < 1000; i++) {
+  //   counterArray.push(<Counter />);
+  // }
+  const schools = [
+    "경기고",
+    "성수고",
+    "창동고",
+    "숭신여고",
+    "양명여고",
+    "성신고",
+  ];
+
+  return (
     <div>
       <h2>Hello, REACT!</h2>
       <p>UseState: Counter</p>
-      <Counter />
-      <Counter />
-      <Counter />
+      {/* {new Array(10).fill(0).map(() => (
+        <Counter />
+      ))} */}
+      {/* {counterArray} */}
+      {schools.map((school) => (
+        <div>
+          <br />
+          <h2>{school} 👍</h2>
+          <Counter />
+          <br />
+          <br />
+        </div>
+      ))}
     </div>
   );
-  
 }
 
 export default App;
